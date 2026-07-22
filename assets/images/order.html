@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Online | Aurelia</title>
+  <meta name="description" content="Order premium dining favorites online from Aurelia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">A</span><span>Aurelia</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="order.html">Order</a>
+        <a class="nav-cta" href="reservation.html">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="center-text reveal">
+      <div class="eyebrow">Order Online</div>
+      <h1 class="section-title">Luxury at home, delivered with care</h1>
+    </div>
+    <div class="order-layout">
+      <div class="grid-2">
+        <article class="card menu-card reveal" data-category="mains">
+          <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Wagyu" />
+          <div class="card-body">
+            <h3>Seared Wagyu</h3>
+            <p>Premium steak with roasted vegetables and herb butter.</p>
+            <div class="button-row">
+              <span class="price">$42</span>
+              <button class="btn btn-secondary add-to-cart" data-name="Seared Wagyu" data-price="42">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="card menu-card reveal" data-category="starters">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Golden Burrata" />
+          <div class="card-body">
+            <h3>Golden Burrata</h3>
+            <p>Burrata with roasted fruit and basil oil.</p>
+            <div class="button-row">
+              <span class="price">$18</span>
+              <button class="btn btn-secondary add-to-cart" data-name="Golden Burrata" data-price="18">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="card menu-card reveal" data-category="desserts">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=900&q=80" alt="Chocolate Torte" />
+          <div class="card-body">
+            <h3>Dark Chocolate Torte</h3>
+            <p>Rich cocoa layers with praline crunch.</p>
+            <div class="button-row">
+              <span class="price">$16</span>
+              <button class="btn btn-secondary add-to-cart" data-name="Dark Chocolate Torte" data-price="16">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="card menu-card reveal" data-category="drinks">
+          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Spritz" />
+          <div class="card-body">
+            <h3>Royal Citrus Spritz</h3>
+            <p>Refreshing spritz with elderflower and sparkling tonic.</p>
+            <div class="button-row">
+              <span class="price">$14</span>
+              <button class="btn btn-secondary add-to-cart" data-name="Royal Citrus Spritz" data-price="14">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <aside class="sidebar reveal">
+        <div class="eyebrow">Cart</div>
+        <h2>Your Order</h2>
+        <div id="cart-list"></div>
+        <div class="cart-item"><span>Items</span><span id="cart-count">0</span></div>
+        <div class="cart-item"><span>Total</span><span id="cart-total">$0</span></div>
+        <div class="checkout">
+          <input type="text" placeholder="Delivery Address" />
+          <input type="text" placeholder="Card Details UI" />
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><div class="brand"><span class="brand-mark">A</span><span>Aurelia</span></div><p>Luxury dining from your home to your table.</p></div>
+      <div><h3>Explore</h3><p><a href="about.html">About</a></p><p><a href="menu.html">Menu</a></p><p><a href="gallery.html">Gallery</a></p></div>
+      <div><h3>Visit</h3><p>85 Goldleaf Avenue</p><p>New York</p></div>
+      <div><h3>Hours</h3><p>Daily</p><p>5 PM – 12 AM</p></div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/15550142084" target="_blank" aria-label="Chat on WhatsApp">WA</a>
+  <button class="back-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
