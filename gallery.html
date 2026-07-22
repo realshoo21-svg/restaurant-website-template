@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Aurelia</title>
+  <meta name="description" content="Explore the luxurious interiors and culinary artistry of Aurelia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container navbar">
+      <a class="brand" href="index.html"><span class="brand-mark">A</span><span>Aurelia</span></a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="reservation.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+        <a class="nav-cta" href="reservation.html">Reserve a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="center-text reveal">
+      <div class="eyebrow">Gallery</div>
+      <h1 class="section-title">The Aurelia experience in every frame</h1>
+    </div>
+    <div class="masonry">
+      <img class="gallery-trigger reveal" src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=700&q=80" alt="Gallery image 1" />
+      <img class="gallery-trigger reveal" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80" alt="Gallery image 2" />
+      <img class="gallery-trigger reveal" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=700&q=80" alt="Gallery image 3" />
+      <img class="gallery-trigger reveal" src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=700&q=80" alt="Gallery image 4" />
+      <img class="gallery-trigger reveal" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Gallery image 5" />
+      <img class="gallery-trigger reveal" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Gallery image 6" />
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><div class="brand"><span class="brand-mark">A</span><span>Aurelia</span></div><p>Gallery showcasing culinary craft and ambiance.</p></div>
+      <div><h3>Explore</h3><p><a href="about.html">About</a></p><p><a href="menu.html">Menu</a></p><p><a href="gallery.html">Gallery</a></p></div>
+      <div><h3>Visit</h3><p>85 Goldleaf Avenue</p><p>New York</p></div>
+      <div><h3>Hours</h3><p>Daily</p><p>5 PM – 12 AM</p></div>
+    </div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/15550142084" target="_blank" aria-label="Chat on WhatsApp">WA</a>
+  <button class="back-top" aria-label="Back to top">↑</button>
+  <div class="lightbox"><img src="" alt="Expanded gallery item" /></div>
+  <script src="script.js"></script>
+</body>
+</html>
