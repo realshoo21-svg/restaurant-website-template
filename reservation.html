@@ -36,7 +36,14 @@
         <form id="reservation-form" class="form-grid">
           <input type="text" placeholder="Full Name" required />
           <input type="email" placeholder="Email Address" required />
-          <input type="tel" placeholder="Phone Number" required />
+          <input
+  type="tel"
+  id="reservation-phone"
+  placeholder="Phone Number"
+  pattern="03[0-9]{9}"
+  title="Enter a valid Pakistani mobile number"
+  required
+/>
           <input type="date" required />
           <input type="time" required />
           <select>
