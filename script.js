@@ -113,15 +113,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const reservationForm = document.querySelector('#reservation-form');
-  if (reservationForm) {
-    reservationForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const confirmation = document.querySelector('#reservation-confirmation');
-      if (confirmation) {
-        confirmation.textContent = 'Reservation request received. Our concierge will confirm your table shortly.';
-      }
-    });
-  }
+
+if (reservationForm) {
+  reservationForm.addEventListener('submit', (event) => {
+
+    if (!reservationForm.checkValidity()) {
+      return;
+    }
+
+    event.preventDefault();
+
+    const confirmation = document.querySelector('#reservation-confirmation');
+
+    if (confirmation) {
+      confirmation.textContent =
+        'Reservation request received. Our concierge will confirm your table shortly.';
+    }
+  });
+}
 
   const contactForm = document.querySelector('#contact-form');
   if (contactForm) {
