@@ -36,6 +36,14 @@
         <form id="contact-form" class="form-grid">
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />
+          <input
+  type="tel"
+  id="phone"
+  placeholder="Phone Number"
+  pattern="03[0-9]{9}"
+  title="Enter a valid Pakistani mobile number"
+  required
+/>
           <textarea placeholder="How can we help?"></textarea>
           <button class="btn btn-primary" type="submit">Send Message</button>
           <p id="contact-confirmation" class="gold"></p>
