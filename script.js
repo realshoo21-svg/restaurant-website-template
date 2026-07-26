@@ -113,7 +113,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const reservationForm = document.querySelector('#reservation-form');
+const dateInput = document.getElementById('reservation-date');
 
+if (dateInput) {
+  dateInput.min = new Date().toISOString().split('T')[0];
+}
 if (reservationForm) {
   reservationForm.addEventListener('submit', (event) => {
 
