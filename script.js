@@ -159,3 +159,61 @@ if (reservationForm) {
     });
   }
 });
+const micBtn = document.getElementById("voice-agent-btn");
+
+if (micBtn) {
+
+  const SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  if (SpeechRecognition) {
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = "en-US";
+
+    micBtn.addEventListener("click", () => {
+      recognition.start();
+      micBtn.classList.add("listening");
+    });
+
+    recognition.onresult = (event) => {
+
+      const command =
+        event.results[0][0].transcript.toLowerCase();
+
+      let reply =
+        "Sorry, I did not understand.";
+
+      if (command.includes("menu")) {
+        reply = "Opening our menu page.";
+        window.location.href = "menu.html";
+      }
+
+      else if (
+        command.includes("reservation") ||
+        command.includes("table")
+      ) {
+        reply = "Opening reservation page.";
+        window.location.href = "reservation.html";
+      }
+
+      else if (
+        command.includes("contact") ||
+        command.includes("location")
+      ) {
+        reply = "Opening contact page.";
+        window.location.href = "contact.html";
+      }
+
+      const speech = new SpeechSynthesisUtterance(reply);
+      speechSynthesis.speak(speech);
+    };
+
+    recognition.onend = () => {
+      micBtn.classList.remove("listening");
+    };
+
+  } else {
+    alert("Voice recognition is not supported in this browser.");
+  }
+}
