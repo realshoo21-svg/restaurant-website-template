@@ -611,3 +611,31 @@ textarea {
     columns: 1;
   }
 }
+.voice-agent-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.voice-agent-btn:hover {
+    transform: scale(1.1);
+}
+
+.voice-agent-btn.listening {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
