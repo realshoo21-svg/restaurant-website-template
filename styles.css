@@ -613,17 +613,24 @@ textarea {
 }
 .voice-agent-btn {
     position: fixed;
-    bottom: 25px;
+    bottom: 100px;
     right: 25px;
+
     width: 75px;
     height: 75px;
-    border: none;
+
+    background: linear-gradient(135deg, #c9a45c, #e0c27a);
+    color: #111;
+
+    border: 2px solid #e0c27a;
     border-radius: 50%;
+
     font-size: 32px;
     cursor: pointer;
     z-index: 9999;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
+
+    box-shadow: 0 8px 25px rgba(201,164,92,0.4);
+    transition: all 0.3s ease;
 }
 
 .voice-agent-btn:hover {
