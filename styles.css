@@ -536,7 +536,10 @@ textarea {
 .whatsapp-float {
   bottom: 1rem;
   background: #25d366;
-  color: #05110a;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  border: 3px solid white;
 }
 
 .back-top {
